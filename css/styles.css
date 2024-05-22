@@ -1,0 +1,56 @@
+.hero {
+    background-color:rgba(47, 48, 58, 1) ;
+}
+.hero-title {
+    color: white;
+}
+.hero-btn {
+    background-color: rgba(33, 150, 243, 1);
+    color: white;
+}
+
+.header-logo {
+color: black;
+font-family: "Raleway",sans-serif;
+font-optical-sizing: auto;
+font-style: italic;
+}
+.logo-span {
+    color: rgba(33, 150, 243, 1);
+    font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: italic;
+}
+.footer {
+    background-color: rgba(47, 48, 58, 1);
+}
+.footer-logo {
+    color: white;
+    font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: italic;
+}
+.logo-color {
+    color: rgba(33, 150, 243, 1);
+    font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: italic;
+}
+.footer-link {
+    color: rgba(250, 250, 250, 0.6)
+}
+.address {
+    color: rgb(250, 250, 250);
+}
+.card-btn  {
+    background-color: rgba(33, 150, 243, 1);
+        height: 38px;
+        width: 73px;
+        color: white;
+
+}
+body {
+    font-family: "Roboto",sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
