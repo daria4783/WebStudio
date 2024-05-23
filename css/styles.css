@@ -1,12 +1,19 @@
+:root {
+    --main-color: white;
+    --background-color :rgba(47, 48, 58, 1);
+    --blue-color:rgba(33, 150, 243, 1);
+    --ones-color:rgba(250, 250, 250, 0.6)
+}
+
 .hero {
-    background-color:rgba(47, 48, 58, 1) ;
+    background-color:var(--background-color) ;
 }
 .hero-title {
-    color: white;
+    color: var(--main-color)
 }
 .hero-btn {
-    background-color: rgba(33, 150, 243, 1);
-    color: white;
+    background-color: var(--blue-color);
+    color:var(--main-color);
 }
 
 .header-logo {
@@ -16,37 +23,37 @@ font-optical-sizing: auto;
 font-style: italic;
 }
 .logo-span {
-    color: rgba(33, 150, 243, 1);
+    color: var(--blue-color);
     font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: italic;
 }
 .footer {
-    background-color: rgba(47, 48, 58, 1);
+    background-color:var(--background-color)
 }
 .footer-logo {
-    color: white;
+    color:var(--main-color)
     font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: italic;
 }
 .logo-color {
-    color: rgba(33, 150, 243, 1);
+    color:var(--blue-color)
     font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: italic;
 }
 .footer-link {
-    color: rgba(250, 250, 250, 0.6)
+    color:var(--ones-color)
 }
 .address {
-    color: rgb(250, 250, 250);
+    color: var(--main-color)
 }
 .card-btn  {
-    background-color: rgba(33, 150, 243, 1);
+    background-color: var(--blue-color)
         height: 38px;
         width: 73px;
-        color: white;
+        color:var(--main-color)
 
 }
 body {
