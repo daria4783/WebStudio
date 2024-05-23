@@ -9,7 +9,7 @@
     background-color:var(--background-color) ;
 }
 .hero-title {
-    color: var(--main-color)
+    color: var(--main-color);
 }
 .hero-btn {
     background-color: var(--blue-color);
@@ -29,32 +29,31 @@ font-style: italic;
         font-style: italic;
 }
 .footer {
-    background-color:var(--background-color)
+    background-color:var(--background-color);
 }
 .footer-logo {
-    color:var(--main-color)
+    color:var(--main-color);
     font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: italic;
 }
 .logo-color {
-    color:var(--blue-color)
+    color:var(--blue-color);
     font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: italic;
 }
 .footer-link {
-    color:var(--ones-color)
+    color:var(--ones-color);
 }
 .address {
-    color: var(--main-color)
+    color: var(--main-color);
 }
 .card-btn  {
-    background-color: var(--blue-color)
+    background-color: var(--blue-color);
         height: 38px;
         width: 73px;
-        color:var(--main-color)
-
+        color: var(--main-color);
 }
 body {
     font-family: "Roboto",sans-serif;
