@@ -59,7 +59,7 @@ img {
   font-size: 44px;
 }
 .hero-btn {
-  background-color: var(--accent-color);
+    background-color: var(--accent-color);
   color: var(--main-background);
   font-size: 16px;
   font-weight: 700;
@@ -142,10 +142,10 @@ footer {
   font-weight: 400;
 }
 .card-btn {
-  background-color: var(--accent-color);
+ background-color: var(--accent-color);
   height: 38px;
   width: 122px;
-  color: var(--main-background);
+  color:var(--main-background);
   font-size: 16px;
   font-weight: 500;
   font-style: italic;
