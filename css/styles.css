@@ -1,7 +1,7 @@
 
 :root {
         --accent-color: #2196F3;
-        --logo-color: #000;
+        --logo-color: rgb(0,0,0);
         --text-color: #212121;
         --additional-color: #757575;
         --footer-namber: rgba(255, 255, 255, 0.60);
@@ -40,13 +40,13 @@
 }
 
 .header-logo {
-color: var(--logo-color);
+color:var(--logo-color);
 font-family: "Raleway",sans-serif;
 font-optical-sizing: auto;
 font-style: italic;
 }
 .logo-span {
-    color: var(--main-background);
+    color:var(--accent-color);
     font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: italic;
