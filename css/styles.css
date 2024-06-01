@@ -1,85 +1,157 @@
-
 :root {
-        --accent-color: #2196F3;
-        --logo-color: rgb(0,0,0);
-        --text-color: #212121;
-        --additional-color: #757575;
-        --footer-namber: rgba(255, 255, 255, 0.60);
-        --footer-background: #2F303A;
-        --team-background: #F5F4FA;
-        --main-background: #FFF;
-    }
+  --accent-color: #2196f3;
+  --logo-color: rgb(0, 0, 0);
+  --text-color: #212121;
+  --additional-color: #757575;
+  --footer-namber: rgba(255, 255, 255, 0.6);
+  --footer-background: #2f303a;
+  --team-background: #f5f4fa;
+  --main-background: #fff;
+}
 
-    a {
-        text-decoration: none;
-    }
+a {
+  text-decoration: none;
+}
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-    h1, h2, h3, p {
-    margin: 0;
-    }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 
-    img {
-        display: block;
-    }
+img {
+  display: block;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-link{
+    font-size: 14px;
+    font-weight: 500;
+}
+.list-title{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--text-color);
+}
 
+.list-text{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--additional-color);
+}
 .hero {
-    background-color:var(--footer-background) ;
+  background-color: var(--footer-background);
 }
 .hero-title {
-    color: var(--main-background);
+  color: var(--main-background);
+  font-weight: 900;
+  font-size: 44px;
 }
 .hero-btn {
-    background-color: var(--accent-color);
-    color:var(--main-background);
+  background-color: var(--accent-color);
+  color: var(--main-background);
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  width: 216px;
 }
-
+.advantages-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.advantages-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--additional-color);
+}
+.work-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.team-capitan {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.team-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--additional-color);
+}
 .header-logo {
-color:var(--logo-color);
-font-family: "Raleway",sans-serif;
-font-optical-sizing: auto;
-font-style: italic;
+  color: var(--logo-color);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
 }
 .logo-span {
-    color:var(--accent-color);
-    font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-style: italic;
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
 }
-.footer {
-    background-color:var(--footer-background);
+footer {
+  background-color: var(--footer-background);
 }
 .footer-logo {
-    color:var(--main-background);
-    font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-style: italic;
+  color: var(--main-background);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
 }
 .logo-color {
-    color:var(--accent-color);
-    font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-style: italic;
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
 }
 .footer-link {
-    color:var(--footer-namber);
+  color: var(--footer-namber);
+  font-size: 14px;
+  font-weight: 400;
 }
 .address {
-    color: var(--main-background);
+  color: var(--main-background);
+  font-size: 14px;
+  font-weight: 400;
 }
-.card-btn  {
-    background-color: var(--accent-color);
-        height: 38px;
-        width: 73px;
-        color: var(--main-background);
+.card-btn {
+  background-color: var(--accent-color);
+  height: 38px;
+  width: 122px;
+  color: var(--main-background);
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
 }
 body {
-    font-family: "Roboto",sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
