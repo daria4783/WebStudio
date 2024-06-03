@@ -32,10 +32,12 @@ img {
 .nav-link {
   font-size: 14px;
   font-weight: 500;
+  color: var(--main-background);
 }
-.header-link{
+.header-list {
     font-size: 14px;
     font-weight: 500;
+    color:var(--additional-color);
 }
 .list-title{
     font-size: 18px;
@@ -150,6 +152,7 @@ footer {
   font-weight: 500;
   font-style: italic;
   line-height: 1.62;
+  
 }
 body {
   font-family: "Roboto", sans-serif;
