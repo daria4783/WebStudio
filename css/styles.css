@@ -18,10 +18,10 @@ ul {
   padding: 0;
   list-style: none;
 }
-.header-mail {
+.header-link:hover{
   color: var(--accent-color);
 }
-.header-nom{
+.header-link{
   color: var(--additional-color);
 }
 h1,
@@ -34,13 +34,11 @@ p {
 img {
   display: block;
 }
-.nav-studia{
+.nav-link:hover{
   color: var(--accent-color);
 }
-.nav-portfolio , .nav-contact {
-  font-size: 14px;
-  font-weight: 500;
-  color:var(--text-color);
+.nav-link{
+  color: var(--text-color);
 }
 .header-list {
     font-size: 14px;
@@ -163,7 +161,7 @@ footer {
   line-height: 1.62;
   cursor: pointer;
 }
-.card-btn-main{
+.card-btn:hover{
   background-color:var(--accent-color);
   height: 38px;
   width: 122px;
@@ -174,12 +172,10 @@ footer {
   line-height: 1.62;
   cursor: pointer;
 }
-.card-btn :first-child {
-background-color: var(--accent-color);
-color: var(--text-color);
-}
+
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+
