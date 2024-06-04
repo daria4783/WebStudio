@@ -8,7 +8,11 @@
   --team-background: #f5f4fa;
   --main-background: #fff;
 }
-
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 a {
   text-decoration: none;
 }
@@ -17,17 +21,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.header-link:hover {
-  color: var(--accent-color);
-}
-.header-link {
-  color: var(--additional-color);
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
 }
 h1,
 h2,
@@ -38,109 +31,6 @@ p {
 
 img {
   display: block;
-}
-.nav-link:hover {
-  color: var(--accent-color);
-}
-.nav-link {
-  color: var(--text-color);
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
-.header-list {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--additional-color);
-}
-.list-title {
-  color: var(--text-color);
-  font-family: "Roboto";
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 1.08px;
-}
-
-.list-text {
-  color: var(--additional-color);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.87;
-  letter-spacing: 0.48px;
-}
-.hero {
-  background-color: var(--footer-background);
-}
-.hero-title {
-  color: var(--main-background);
-  font-family: "Roboto", sans-serif;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
-}
-.hero-btn {
-  background-color: var(--accent-color);
-  color: var(--main-background);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  cursor: pointer;
-}
-.advantages-title {
-  color: var(--text-color);
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
-}
-.advantages-text {
-  color: var(--additional-color);
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-}
-.work-title {
-  color: var(--text-color);
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-.team-title {
-  color: var(--text-color);
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-}
-.team-capitan {
-  color: var(--text-color);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.18;
-  letter-spacing: 0.48px;
-}
-.team-desc {
-  color: var(--additional-color);
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.18;
-  letter-spacing: 0.48px;
 }
 .header-logo {
   color: var(--logo-color);
@@ -157,6 +47,91 @@ img {
   font-style: normal;
   font-size: 26px;
   font-weight: 700;
+}
+.nav-link:hover {
+  color: var(--accent-color);
+}
+.nav-link {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+.header-list {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--additional-color);
+}
+.header-link:hover {
+  color: var(--accent-color);
+}
+.header-link {
+  color: var(--additional-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+.hero {
+  background-color: var(--footer-background);
+}
+.hero-title {
+  color: var(--main-background);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+}
+.hero-btn {
+  background-color: var(--accent-color);
+  color: var(--main-background);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  cursor: pointer;
+}
+.advantages-title {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+}
+.advantages-text {
+  color: var(--additional-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.work-title {
+  color: var(--text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+}
+.team-title {
+  color: var(--text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+}
+.team-capitan {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.48px;
+}
+.team-desc {
+  color: var(--additional-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.48px;
 }
 footer {
   background-color: var(--footer-background);
@@ -177,17 +152,15 @@ footer {
   font-size: 26px;
   font-weight: 700;
 }
-.footer-link {
-  color: var(--footer-namber);
-  font-family: "Roboto";
+.address {
+  color: var(--main-background);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-.address {
-  color: var(--main-background);
-  font-family: Roboto;
+.footer-link {
+  color: var(--footer-namber);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -198,7 +171,6 @@ footer {
   height: 38px;
   width: 122px;
   color: var(--text-color);
-  font-family: "Roboto";
   font-size: 16px;
   font-style: italic;
   font-weight: 500;
@@ -211,7 +183,6 @@ footer {
   height: 38px;
   width: 122px;
   color: var(--team-background);
-  font-family: "Roboto";
   font-size: 16px;
   font-style: italic;
   font-weight: 500;
@@ -219,9 +190,21 @@ footer {
   letter-spacing: 0.48px;
   cursor: pointer;
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+.list-title {
+  color: var(--text-color);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
 }
+.list-text {
+  color: var(--additional-color);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.48px;
+}
+
+
