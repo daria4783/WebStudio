@@ -32,6 +32,16 @@ p {
 img {
   display: block;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 1px solid red;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-logo {
   color: var(--logo-color);
   font-family: "Raleway", sans-serif;
@@ -75,6 +85,8 @@ img {
 }
 .hero {
   background-color: var(--footer-background);
+  padding-top: 200px;
+  padding-bottom: 210px;
 }
 .hero-title {
   color: var(--main-background);
@@ -91,6 +103,13 @@ img {
   line-height: 1.87;
   letter-spacing: 0.96px;
   cursor: pointer;
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+}
+.advantages {
+  padding-top: 94px;
 }
 .advantages-title {
   color: var(--text-color);
@@ -105,12 +124,20 @@ img {
   font-weight: 400;
   line-height: 1.71;
 }
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .work-title {
   color: var(--text-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+}
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   color: var(--text-color);
@@ -135,6 +162,8 @@ img {
 }
 footer {
   background-color: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   color: var(--main-background);
@@ -166,10 +195,15 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.card {
+  padding-top: 94px;
+}
 .card-btn {
   background-color: var(--team-background);
-  height: 38px;
-  width: 122px;
+  padding-left: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 25px;
   color: var(--text-color);
   font-size: 16px;
   font-style: italic;
@@ -180,8 +214,10 @@ footer {
 }
 .card-btn:hover {
   background-color: var(--accent-color);
-  height: 38px;
-  width: 122px;
+  padding-left: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 25px;
   color: var(--team-background);
   font-size: 16px;
   font-style: italic;
@@ -189,6 +225,10 @@ footer {
   line-height: 1.62;
   letter-spacing: 0.48px;
   cursor: pointer;
+}
+.list {
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 .list-title {
   color: var(--text-color);
@@ -206,5 +246,3 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.48px;
 }
-
-
