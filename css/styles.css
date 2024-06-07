@@ -86,7 +86,7 @@ img {
 .hero {
   background-color: var(--footer-background);
   padding-top: 200px;
-  padding-bottom: 210px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--main-background);
@@ -197,6 +197,7 @@ footer {
 }
 .card {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .card-btn {
   background-color: var(--team-background);
