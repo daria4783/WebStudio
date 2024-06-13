@@ -41,6 +41,12 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  display: flex;
+}
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-logo {
   color: var(--logo-color);
@@ -58,6 +64,10 @@ img {
   font-size: 26px;
   font-weight: 700;
 }
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
 .nav-link:hover {
   color: var(--accent-color);
 }
@@ -72,6 +82,9 @@ img {
   font-size: 14px;
   font-weight: 500;
   color: var(--additional-color);
+  display: flex;
+  gap: 50px;
+  justify-content:end;
 }
 .header-link:hover {
   color: var(--accent-color);
@@ -111,6 +124,11 @@ img {
 .advantages {
   padding-top: 94px;
 }
+.advantages-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
 .advantages-title {
   color: var(--text-color);
   font-size: 14px;
@@ -128,6 +146,11 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.work-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
 .work-title {
   color: var(--text-color);
   font-size: 36px;
@@ -135,16 +158,37 @@ img {
   line-height: 1.16;
   letter-spacing: 1.08px;
 }
+.work-img {
+  width: 370px;
+  height: 294px;
+}
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--team-background);
 }
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
 .team-title {
   color: var(--text-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+}
+.team-item{
+background-color: var(--main-background);
+width: 270px;
+height: 368px;
+}
+
+.team-img{
+  width: 270px;
+height: 260px;
 }
 .team-capitan {
   color: var(--text-color);
@@ -164,6 +208,8 @@ footer {
   background-color: var(--footer-background);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 .footer-logo {
   color: var(--main-background);
@@ -199,6 +245,11 @@ footer {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.card-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
 .card-btn {
   background-color: var(--team-background);
   padding-left: 25px;
@@ -230,6 +281,13 @@ footer {
 .list {
   padding-top: 50px;
   padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.list-item {
+  outline: 1px solid #eee;
 }
 .list-title {
   color: var(--text-color);
