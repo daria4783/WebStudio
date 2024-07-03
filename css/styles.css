@@ -170,8 +170,10 @@ img {
   margin-bottom: 50px;
 }
 .work-img {
-  width: 370px;
-  height: 294px;
+  width: 100%;
+}
+.work-item{
+  flex-basis: calc((100% - 60px)/ 3);
 }
 .team {
   padding-top: 94px;
@@ -195,6 +197,7 @@ img {
 }
 .team-item{
 background-color: var(--main-background);
+flex-basis: calc((100% - 60px) / 3);
 }
 
 .team-img{
@@ -276,6 +279,7 @@ margin-bottom: 20px;
   display: flex;
   gap: 8px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .card-btn {
   background-color: var(--team-background);
@@ -293,6 +297,7 @@ margin-bottom: 20px;
   border-radius: 4px;
   border: none;
 }
+
 .card-btn:hover {
   background-color: var(--accent-color);
   padding-left: 25px;
@@ -319,6 +324,7 @@ margin-bottom: 20px;
 }
 .list-item {
   outline: 1px solid #eee;
+  flex-basis: calc((100% - 60px)/3);
 }
 .list-title {
   color: var(--text-color);
