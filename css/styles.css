@@ -43,7 +43,7 @@ img {
   padding-bottom: 25px;
   display: flex;
 }
-.box{
+.box {
   display: flex;
   align-items: center;
 }
@@ -64,7 +64,7 @@ img {
   font-size: 26px;
   font-weight: 700;
 }
-.header-nav{
+.header-nav {
   margin-right: auto;
 }
 .nav-list {
@@ -87,7 +87,7 @@ img {
   color: var(--additional-color);
   display: flex;
   gap: 50px;
-  justify-content:end;
+  justify-content: end;
 }
 .header-link:hover {
   color: var(--accent-color);
@@ -137,6 +137,51 @@ img {
   gap: 30px;
   justify-content: center;
 }
+.advantages-item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background);
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.advantages-item:first-child::before {
+  background-image: url(../imeges/antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../imeges/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.advantages-item:nth-child(3)::before {
+  background-image: url(../imeges/diagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../imeges/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
 .advantages-title {
   color: var(--text-color);
   font-size: 14px;
@@ -172,8 +217,8 @@ img {
 .work-img {
   width: 100%;
 }
-.work-item{
-  flex-basis: calc((100% - 60px)/ 3);
+.work-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 .team {
   padding-top: 94px;
@@ -195,16 +240,16 @@ img {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-.team-item{
-background-color: var(--main-background);
-flex-basis: calc((100% - 60px) / 3);
+.team-item {
+  background-color: var(--main-background);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
-.team-img{
+.team-img {
   width: 270px;
-height: 260px;
+  height: 260px;
 }
-.team-text{
+.team-text {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -238,7 +283,7 @@ footer {
   font-size: 26px;
   font-weight: 700;
   display: block;
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo-color {
   color: var(--accent-color);
@@ -255,13 +300,13 @@ margin-bottom: 20px;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-.footer-list{
+.footer-list {
   margin-top: 9px;
 }
-.footer-item{
+.footer-item {
   margin-bottom: 9px;
 }
-.footer-item:last-child{
+.footer-item:last-child {
   margin-bottom: 0px;
 }
 .footer-link {
@@ -321,9 +366,9 @@ margin-bottom: 20px;
 }
 .list-item {
   border: 1px solid #eee;
-  flex-basis: calc((100% - 60px)/3);
+  flex-basis: calc((100% - 60px) / 3);
 }
-.list-img{
+.list-img {
   width: 100%;
 }
 .list-title {
@@ -341,7 +386,7 @@ margin-bottom: 20px;
   letter-spacing: 0.48px;
   margin-top: 4px;
 }
-.list-desc{
+.list-desc {
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
