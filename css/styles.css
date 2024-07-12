@@ -70,7 +70,7 @@ img {
   display: flex;
   gap: 50px;
 }
-.nav-list:nth-child(2):active {
+.active {
   color: var(--accent-color);
 }
 .nav-link:hover {
