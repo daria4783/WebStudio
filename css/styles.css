@@ -70,9 +70,7 @@ img {
   display: flex;
   gap: 50px;
 }
-.active {
-  color: var(--accent-color);
-}
+
 .nav-link:hover {
   color: var(--accent-color);
 }
@@ -82,6 +80,9 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+}
+.active {
+  color: var(--accent-color);
 }
 .header-list {
   font-size: 14px;
