@@ -7,6 +7,7 @@
   --footer-background: #2f303a;
   --team-background: #f5f4fa;
   --main-background: #fff;
+  --header-line: #ececec;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -41,6 +42,7 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
+  border-bottom: 2px solid var(--header-line);
 }
 .box {
   display: flex;
