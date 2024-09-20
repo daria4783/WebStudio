@@ -426,6 +426,7 @@ footer {
 .footer-box{
   display: flex;
   gap: 70px;
+  justify-content: baseline;
 }
 .icons-text{
   color: var(--header-line);
@@ -439,8 +440,6 @@ margin-bottom: 20px;
 .icons-list{
   display: flex;
   gap: 10px;
-  
-  justify-content:baseline;
 }
 .icons-link{
 width: 44px;
