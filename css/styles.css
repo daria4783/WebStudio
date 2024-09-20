@@ -439,6 +439,8 @@ margin-bottom: 20px;
 .icons-list{
   display: flex;
   gap: 10px;
+  
+  justify-content:baseline;
 }
 .icons-link{
 width: 44px;
