@@ -345,7 +345,7 @@ justify-content: center;
 .team-icon:hover, .team-icon:focus{
 background-color: var(--accent-color);
 border: none;
-outline: 1px solid var(--accent-color);
+outline: 2px solid var(--accent-color);
 .team-symbol{
   fill: var(--main-background);
 }
