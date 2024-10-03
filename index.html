@@ -355,57 +355,130 @@
     <footer>
       <div class="container footer-box">
         <div class="footer-info">
-        <a href="./index.html" class="footer-logo"
-          ><span class="logo-color">Web</span>Studio</a
-        >
-        <address>
-          <a
-            href="https://www.google.de/maps/search/%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26/@50.4770716,30.3878069,11.79z?entry=ttu"
-            target="_blank"
-            class="address"
-            >м. Київ, пр-т Лесі Українки, 26</a
+          <a href="./index.html" class="footer-logo"
+            ><span class="logo-color">Web</span>Studio</a
           >
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="mailto:info@devstudio.com" class="footer-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-item">
-              <a href="tel:+380961111111" class="footer-link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <address>
+            <a
+              href="https://www.google.de/maps/search/%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26/@50.4770716,30.3878069,11.79z?entry=ttu"
+              target="_blank"
+              class="address"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="mailto:info@devstudio.com" class="footer-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="tel:+380961111111" class="footer-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
         <div class="footer-icons">
           <p class="icons-text">приєднуйтесь</p>
           <ul class="icons-list">
-            <li class="icons-item"><a href="" class="icons-link"><svg class="icons-symbol">
+            <li class="icons-item">
+              <a href="" class="icons-link"
+                ><svg class="icons-symbol">
                   <use
                     href="./imeges/symbol-defs.svg#icon-instagram"
                   ></use></svg
-              ></a></li>
-            <li class="icons-item"><a href="" class="icons-link"><svg class="icons-symbol">
-                  <use
-                    href="./imeges/symbol-defs.svg#icon-twitter-"
-                  ></use></svg
-              ></a></li>
-            <li class="icons-item"><a href="" class="icons-link"><svg class="icons-symbol">
-                  <use
-                    href="./imeges/symbol-defs.svg#icon-facebook"
-                  ></use></svg
-              ></a></li>
-            <li class="icons-item"><a href="" class="icons-link"><svg class="icons-symbol">
+              ></a>
+            </li>
+            <li class="icons-item">
+              <a href="" class="icons-link"
+                ><svg class="icons-symbol">
+                  <use href="./imeges/symbol-defs.svg#icon-twitter-"></use></svg
+              ></a>
+            </li>
+            <li class="icons-item">
+              <a href="" class="icons-link"
+                ><svg class="icons-symbol">
+                  <use href="./imeges/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="icons-item">
+              <a href="" class="icons-link"
+                ><svg class="icons-symbol">
                   <use
                     href="./imeges/symbol-defs.svg#icon-linkedin-1"
                   ></use></svg
-              ></a></li>
-            
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="news">
+          <h2 class="news-title">Підпишіться на розсилку</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <input type="email" class="news-input" placeholder="E-mail" />
+            </li>
+            <li class="news-item">
+              <button type="submit" class="news-btn">
+                Підписатися<svg class="news-icon">
+                  <use
+                    href="./imeges/symbol-defs.svg#icon-icon-send"
+                  ></use>
+                </svg>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
     </footer>
+    <!-- <div class="backdrop">
+      <div class="modal">
+        <form class="modal-form">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label for="name" class="modal-signature">Ім'я</label>
+          <div class="input-icons">
+            <input type="text" id="name" class="modal-input" />
+            <svg class="modal-icon">
+              <use
+                href="./imeges/symbol-defs.svg#icon-person-black-18dp-1"
+              ></use>
+            </svg>
+          </div>
+          <label for="phone" class="modal-signature">Телефон</label>
+          <div class="input-icons">
+            <input type="tel" id="phone" class="modal-input" />
+            <svg class="modal-icon">
+              <use href="./imeges/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="mail" class="modal-signature">Пошта</label>
+          <div class="input-icons">
+            <input type="email" name="" id="mail" class="modal-input" />
+            <svg class="modal-icon">
+              <use href="./imeges/symbol-defs.svg#icon-emile"></use>
+            </svg>
+          </div>
+          <label for="com" class="modal-signature">Коментар</label>
+
+          <textarea
+            name=""
+            id="com"
+            class="modal-com"
+            placeholder="Введіть текст"
+          ></textarea>
+          <label class="modal-chek">
+            <input type="checkbox" class="chek-input" />
+            <span class="chek-span">Погоджуюся з розсилкою та приймаю</span>
+            <a href="#" class="check-link"> Умови договору</a>
+          </label>
+          <button type="submit" class="modal-btn">Відправити</button>
+        </form>
+        <button type="button" class="btn-close">
+          <svg class="icon-close">
+            <use href="./imeges/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div> -->
   </body>
 </html>
