@@ -614,7 +614,7 @@ cursor: pointer;
   padding-bottom: 20px;
 }
 /*------модальне вікно---------*/
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -624,6 +624,11 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+}
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
 }
 .modal {
   width: 528px;
@@ -757,4 +762,4 @@ cursor: pointer;
 .icon-close:hover {
   fill: var(--accent-color);
   cursor: pointer;
-} */
+}
