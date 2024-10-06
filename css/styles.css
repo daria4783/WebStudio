@@ -492,6 +492,9 @@ footer {
   fill: var(--main-background);
 }
 /* -------розсилка--------- */
+.news{
+  margin-left: 93px;
+}
 .news-title {
   color: var(--main-background);
   font-size: 14px;
@@ -631,8 +634,6 @@ footer {
   pointer-events: none;
 }
 .modal {
-  width: 528px;
-  height: 581px;
   background-color: white;
   padding: 40px;
   position: relative;
