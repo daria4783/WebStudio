@@ -656,12 +656,6 @@ footer {
 .input-icons {
   position: relative;
 }
-.input-icons:hover {
-  border-color: var(--accent-color);
-  .modal-icon {
-    fill: var(--accent-color);
-  }
-}
 
 .modal-input {
   width: 448px;
@@ -672,6 +666,7 @@ footer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 10px;
   padding-left: 40px;
+  padding-right: 30px;
 }
 .modal-icon {
   width: 18px;
@@ -682,17 +677,17 @@ footer {
   bottom: 11px;
 }
 
-.modal-input:hover {
-  border-color: var(--accent-color);
+.modal-input:hover,
+.modal-input:focus {
+  border: none;
+  outline: 1px solid var(--accent-color);
   .modal-icon {
     fill: var(--accent-color);
   }
 }
-.modal-input:focus{
-  border-color: var(--accent-color);
-  .modal-icon {
-    fill: var(--accent-color);
-  }
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon{
+  fill: var(--accent-color);
 }
 .modal-com {
   width: 448px;
