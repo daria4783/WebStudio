@@ -749,6 +749,9 @@ footer {
   margin-bottom: 10px;
   padding-left: 40px;
   padding-right: 30px;
+ transition-duration: 250ms;
+ transition-property: color, backround color, border color;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
   width: 18px;
@@ -757,6 +760,9 @@ footer {
   position: absolute;
   left: 12px;
   bottom: 11px;
+ transition-duration: 250ms;
+ transition-property: fill;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -849,6 +855,9 @@ footer {
   width: 20px;
   height: 20px;
   fill: var(--text-color);
+ transition-duration: 250ms;
+ transition-property:fill;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-close:hover {
   fill: var(--accent-color);
