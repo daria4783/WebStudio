@@ -18,7 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>WebStudio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -29,7 +34,9 @@
           ><span class="logo-span">Web</span>Studio</a
         >
         <!-- -------------NAVIGATION------------- -->
-        <nav class="header-nav">
+        <nav class="header-nav" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="./index.html" class="nav-link active">Студія</a>
@@ -40,7 +47,7 @@
             <li class="nav-item"><a href="" class="nav-link">Контакт</a></li>
           </ul>
         </nav>
-        <ul class="header-list">
+        <ul class="header-list" data-aos="zoom-out">
           <li class="header-item">
             <a href="mailto:info@devstudio.com" class="header-link"
               ><svg class="header-icon">
@@ -65,7 +72,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn" data-modal-open>
+          <button type="button" class="hero-btn" data-modal-open animate__flipOutX>
             Замовити послугу
           </button>
         </div>
@@ -132,7 +139,7 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="team-list">
+          <ul class="team-list" animate__lightSpeedInRight>
             <li class="team-item">
               <img src="./imeges/igor.jpg" alt="men1" class="team-img" />
               <div class="team-text">
@@ -305,7 +312,7 @@
         </div>
       </section>
       <!----------------CLIENTS-------------- -->
-      <section class="klienten">
+      <section class="klienten" animate__slideOutDown>
         <div class="container">
           <h2 class="klienten-title">Постійні клієнти</h2>
           <ul class="klienten-list">
@@ -490,5 +497,9 @@
     </div>
     <!-- -------JS--------- -->
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
