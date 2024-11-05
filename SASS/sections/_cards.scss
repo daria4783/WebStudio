@@ -1,0 +1,40 @@
+.card {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.card-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-btn {
+    background-color: var(--team-background);
+    padding-left: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 25px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition-duration: 250ms;
+    transition-property: color, backround color, box-shadow, outline, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-btn:hover,
+.card-btn:focus {
+    border: none;
+    outline: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--team-background);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
