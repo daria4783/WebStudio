@@ -1,19 +1,18 @@
-.icons-text {
-    color: var(--header-line);
+.icons {
+  &__text {
+    color: $header-line;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
-}
-
-.icons-list {
+  }
+  &__list {
     display: flex;
     gap: 10px;
-}
-
-.icons-link {
+  }
+  &__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -25,20 +24,19 @@
     transition-duration: 250ms;
     transition-property: backround color, outline, border;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.icons-link:hover,
-.icons-link:focus {
-    background-color: var(--accent-color);
-}
-
-.icons-link:focus {
-    border: none;
-    outline: 1px solid var(--accent-color);
-}
-
-.icons-symbol {
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+    &:focus {
+      border: none;
+      outline: 1px solid $accent-color;
+    }
+  }
+  &__symbol {
     width: 20px;
     height: 20px;
-    fill: var(--main-background);
+    fill: $main-background;
+  }
 }

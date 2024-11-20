@@ -1,15 +1,16 @@
 .hero {
-    background-color: var(--footer-background);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../imeges/herobackground.jpg);
-}
+  background-color: $team-background;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imeges/herobackground.jpg);
 
-.hero-title {
-    color: var(--main-background);
+  &__title {
+    color: $main-background;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -18,21 +19,23 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+  &__btn {
+  background-color: $accent-color;
+  color:$main-background;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  cursor: pointer;
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 }
 
-.hero-btn {
-    background-color: var(--accent-color);
-    color: var(--main-background);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    cursor: pointer;
-    padding-left: 32px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 32px;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
+

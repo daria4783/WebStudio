@@ -1,30 +1,28 @@
 .work {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    text-align: center;
-}
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
 
-.work-list {
+  &__list {
     display: flex;
     gap: 30px;
     justify-content: center;
-}
+  }
 
-.work-title {
-    color: var(--text-color);
+  &__title {
+    color: $text-color;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-}
+  }
 
-.work-img {
+  &__img {
     width: 100%;
-}
-
-.work-text {
-    color: var(--main-background);
+  }
+  &__text {
+    color: $main-background;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -40,9 +38,10 @@
     width: 370px;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
-}
+  }
 
-.work-item {
+  &__item {
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
+  }
 }

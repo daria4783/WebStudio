@@ -1,26 +1,25 @@
 .klienten {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-.klienten-list {
+  &__list {
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.klienten-title {
-    color: var(--text-color);
+  &__title {
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-}
+  }
 
-.klienten-link {
+  &__link {
     display: block;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -31,27 +30,27 @@
     transition-duration: 250ms;
     transition-property: backround color, outline, border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.klienten-link:hover,
-.klienten-link:focus {
-    border-color: var(--accent-color);
-
-    .klienten-symbol {
-        fill: var(--accent-color);
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      .klienten__symbol {
+        fill: $accent-color;
+      }
     }
-}
 
-.klienten-link:focus {
-    border: none;
-    outline: 1px solid var(--accent-color);
-}
+    &:focus {
+      border: none;
+      outline: 1px solid $accent-color;
+    }
+  }
 
-.klienten-symbol {
+  &__symbol {
     width: 106px;
     height: 60px;
     fill: #afb1b8;
     transition-duration: 250ms;
     transition-property: color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

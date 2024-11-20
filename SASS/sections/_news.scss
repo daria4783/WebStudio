@@ -1,23 +1,19 @@
 .news {
     margin-left: auto;
-}
-
-.news-title {
-    color: var(--main-background);
+    &__title {
+    color: $main-background;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
-
-.news-list {
+&__list {
     display: flex;
     gap: 12px;
     margin-top: 20px;
 }
-
-.news-input {
+&__input {
     width: 358px;
     height: 50px;
     border-radius: 4px;
@@ -26,13 +22,12 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     display: block;
 }
-
-.news-btn {
+&__btn {
     border: none;
     border-radius: 4px;
-    background: #2196f3;
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--main-background);
+    color: $main-background;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -43,9 +38,17 @@
     gap: 10px;
     cursor: pointer;
 }
-
-.news-icon {
+&__icon {
     width: 24px;
     height: 24px;
-    fill: var(--main-background);
+    fill: $main-background;
 }
+}
+
+
+
+
+
+
+
+

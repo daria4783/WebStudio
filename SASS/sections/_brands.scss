@@ -1,76 +1,72 @@
 .list {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 
-.list-item {
+  &__item {
     border: 1px solid #eee;
     flex-basis: calc((100% - 60px) / 3);
-}
 
-.list-item:hover {
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+    &:hover {
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+      cursor: pointer;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+  }
+  &__text {
+    color: $additional-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+    margin-top: 4px;
+  }
+  &__desc {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+  }
 }
 
-.box-item {
+.box {
+  &__item {
     position: relative;
     overflow: hidden;
-}
-
-.box-desc {
+    &:hover {
+      .box__desc {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  &__desc {
     position: absolute;
     top: 0;
     left: 0;
     padding: 63px 24px 63px 24px;
     background: rgba(33, 150, 243, 0.9);
-    color: var(--main-background);
+    color: $main-background;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.54px;
     opacity: 0;
     transition-duration: 250ms;
-    transition-property: color, backround color, ;
+    transition-property: color, backround color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(100%);
-}
-
-.list-item:hover {
-    .box-desc {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.list-img {
-    width: 100%;
-}
-
-.list-title {
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
-}
-
-.list-text {
-    color: var(--additional-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.87;
-    letter-spacing: 0.48px;
-    margin-top: 4px;
-}
-
-.list-desc {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
+  }
 }
