@@ -5,8 +5,10 @@
   border-bottom: 2px solid $header-line;
 
   &__box {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    @include flexbox($justify: flex-start, $wrap: nowrap);
+    
   }
 
   &__logo {
@@ -30,22 +32,24 @@
 
   &__nav {
     margin-right: auto;
+    
   }
   &__list {
     font-size: 14px;
     font-weight: 500;
     color:$additional-color;
-    display: flex;
+    // display: flex;
     gap: 50px;
-    justify-content: end;
-  }
+    // justify-content: end;
+    @include flexbox($justify: end, $align: stretch, $wrap: nowrap);
+   }
   &__icon {
     fill: $additional-color;
     width: 14px;
     height: 16px;
     transition-duration: 250ms;
     transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %ttf;
   }
   &__link {
     color: $additional-color;
@@ -53,12 +57,13 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    // justify-content: flex-end;
+    @include flexbox($justify: flex-end, $align: stretch, $wrap: nowrap);
     gap: 10px;
     transition-duration: 250ms;
     transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %ttf;
 
     &:hover,
     &:focus {
@@ -85,7 +90,7 @@
     letter-spacing: 0.28px;
     transition-duration: 250ms;
     transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %ttf;
 
     &:hover,
     &:focus {
@@ -105,7 +110,7 @@
       top: 35px;
       transition-duration: 250ms;
       transition-property: backround color;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %ttf;
     }
     &:hover::after {
       opacity: 1;

@@ -2,6 +2,8 @@
 @import "./base/common";
 @import "./base/container";
 @import "./base/variables";
+@import"./utils/placeholder";
+@import "./utils/mixin";
 @import "./sections/header";
 @import "./sections/hero";
 @import "./sections/advantages";

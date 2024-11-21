@@ -1,9 +1,10 @@
 .list {
   margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  // justify-content: center;
+  @include flexbox($align: stretch);
 
   &__item {
     border: 1px solid #eee;

@@ -1,12 +1,14 @@
 .card {
   padding-top: 94px;
   padding-bottom: 94px;
+  
 
   &__list {
-    display: flex;
+    // display: flex;
     gap: 8px;
-    justify-content: center;
-    flex-wrap: wrap;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    @include flexbox($align: stretch);
   }
   &__btn {
     background-color: $team-background;
@@ -24,7 +26,7 @@
     border: none;
     transition-duration: 250ms;
     transition-property: color, backround color, box-shadow, outline, border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %ttf;
 
     &:hover,
     &:focus {

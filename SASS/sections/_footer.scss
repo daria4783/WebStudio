@@ -2,12 +2,14 @@
   background-color: $footer-background;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  @include flexbox($direction: column, $align: stretch);
 
   &__box {
-    display: flex;
-    justify-content: baseline;
+    // display: flex;
+    // justify-content: baseline;
+    @include flexbox($justify: baseline, $align: stretch);
   }
 
   &__info {

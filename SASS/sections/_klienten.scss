@@ -3,10 +3,11 @@
   padding-bottom: 94px;
 
   &__list {
-    display: flex;
+    // display: flex;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
+    @include flexbox($wrap: nowrap);
   }
 
   &__title {
@@ -29,7 +30,7 @@
     padding-left: 32px;
     transition-duration: 250ms;
     transition-property: backround color, outline, border-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %ttf;
 
     &:hover,
     &:focus {
@@ -51,6 +52,6 @@
     fill: #afb1b8;
     transition-duration: 250ms;
     transition-property: color, fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %ttf;
   }
 }
