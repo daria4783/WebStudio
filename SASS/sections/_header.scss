@@ -1,14 +1,17 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  display: flex;
-  border-bottom: 2px solid $header-line;
+  padding: 16px 0px;
+  border-bottom: 1px solid $header-line;
 
-  &__box {
-    // display: flex;
-    // align-items: center;
-    @include flexbox($justify: flex-start, $wrap: nowrap);
-    
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
+
+  & > .container {
+    display: flex;
+    align-items: center;
   }
 
   &__logo {
@@ -16,9 +19,21 @@
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    margin-right: 93px;
+    margin-right: auto;
+    line-height: 1.38;
+    letter-spacing: 0.72px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      letter-spacing: 0.78px;
+      margin-right: 93px;
+    }
   }
 
   &__span {
@@ -32,17 +47,25 @@
 
   &__nav {
     margin-right: auto;
-    
   }
   &__list {
     font-size: 14px;
     font-weight: 500;
-    color:$additional-color;
-    // display: flex;
+    color: $additional-color;
+    display: none;
     gap: 50px;
-    // justify-content: end;
-    @include flexbox($justify: end, $align: stretch, $wrap: nowrap);
-   }
+    
+
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
   &__icon {
     fill: $additional-color;
     width: 14px;
@@ -52,36 +75,46 @@
     @extend %ttf;
   }
   &__link {
-    color: $additional-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
     // display: flex;
     // justify-content: flex-end;
-    @include flexbox($justify: flex-end, $align: stretch, $wrap: nowrap);
+    @include flexbox($justify:flex-start, $align: center, $wrap: nowrap);
     gap: 10px;
-    transition-duration: 250ms;
-    transition-property: color;
-    @extend %ttf;
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      .header__cell{
+         color: $accent-color;
+      }
+     
 
       .header__icon {
         fill: $accent-color;
       }
     }
   }
-}
+     &__cell {
+    color: $additional-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+
 
 .nav {
   &__list {
-    display: flex;
+    display: none;
     gap: 50px;
-  }
 
+    @media screen and (min-width: 768px) {
+  display: flex;
+  }
+}
   &__link {
     color: $text-color;
     font-size: 14px;
@@ -102,7 +135,7 @@
       display: block;
       width: 100%;
       height: 4px;
-      background-color:$accent-color;
+      background-color: $accent-color;
       border-radius: 4px;
       margin-top: 10px;
       opacity: 0;
@@ -121,7 +154,7 @@
     position: relative;
   }
 }
-
+}
 .active {
-  color:$accent-color;
+  color: $accent-color;
 }

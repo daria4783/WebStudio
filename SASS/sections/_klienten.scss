@@ -1,13 +1,20 @@
 .klienten {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__list {
     // display: flex;
     gap: 30px;
     // justify-content: center;
     // align-items: center;
-    @include flexbox($wrap: nowrap);
+    @include flexbox($justify: center, $wrap: wrap);
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__title {
@@ -24,13 +31,17 @@
     display: block;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 16px 52px;
     transition-duration: 250ms;
     transition-property: backround color, outline, border-color;
     @extend %ttf;
+    flex-basis: calc((100% - 60px) / 3);
+    @media screen and (min-width: 768px) {
+      padding: 16px 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 16px 32px;
+    }
 
     &:hover,
     &:focus {

@@ -1,41 +1,61 @@
 .hero {
   background-color: $team-background;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../imeges/herobackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__title {
     color: $main-background;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    width: 696px;
+    line-height: 1.61;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+      width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 2.64px;
+      width: 696px;
+    }
   }
   &__btn {
-  background-color: $accent-color;
-  color:$main-background;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  cursor: pointer;
-  padding-left: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 32px;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-}
+    background-color: $accent-color;
+    color: $main-background;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+    }
+  }
+}
