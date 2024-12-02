@@ -12,8 +12,10 @@
     gap: 8px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 326px;
-
+    width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 326px;
+    }
     @media screen and (min-width: 768px) {
       justify-content: center;
       display: flex;
@@ -40,6 +42,16 @@
     transition-duration: 250ms;
     transition-property: color, backround color, box-shadow, outline, border;
     @extend %ttf;
+    // @media screen and (min-width: 480px) {
+    //   padding: 6px 22px;
+    // }
+    // @media screen and (min-width: 768px) {
+    //   padding: 6px 22px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //  padding: 6px 22px;
+    // }
 
     &:hover,
     &:focus {
