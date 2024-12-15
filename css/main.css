@@ -95,6 +95,22 @@ body {
     margin-right: 93px;
   }
 }
+.header__button {
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__burger {
+  width: 40px;
+  height: 40px;
+  fill: black;
+}
 .header__span {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
@@ -204,6 +220,92 @@ body {
 
 .active {
   color: #2196f3;
+}
+
+.menu {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 48px 0px 48px 40px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+}
+.menu__button {
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+}
+.menu__close {
+  width: 40px;
+  height: 40px;
+  fill: rgb(0, 0, 0);
+}
+.menu__item:first-child {
+  margin-bottom: 36px;
+}
+.menu__item:last-child {
+  margin-top: 32px;
+  margin-bottom: 200px;
+}
+.menu__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.menu__link:hover {
+  color: #2196f3;
+}
+.menu__item-contact:first-child {
+  margin-bottom: 32px;
+}
+.menu__item-contact:first-child .menu__contact-link {
+  color: #2196f3;
+  font-family: "Roboto";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.menu__contact-link {
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.menu__list-social {
+  display: flex;
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+.menu__item-social:not(:last-child) {
+  margin-right: 10px;
+  display: flex;
+}
+.menu__item-social:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  display: flex;
+  margin-left: 10px;
+}
+.menu__link-social {
+  color: #2196f3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px; /* 122.222% */
+  letter-spacing: 0.36px;
 }
 
 .hero {
@@ -808,6 +910,7 @@ body {
   }
 }
 .news__input {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
