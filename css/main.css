@@ -54,6 +54,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.active {
+  color: #2196f3;
+}
+
 .header {
   padding: 16px 0px;
   border-bottom: 1px solid #ececec;
